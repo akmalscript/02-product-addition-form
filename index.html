@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Data Produk</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form Tambah Data Produk</h2>
+        <form name="formProduk">
+            <div class="form-group">
+                <label for="nama_produk">Nama Produk</label>
+                <input type="text" id="nama_produk" name="nama_produk">
+                <div id="errorNamaProduk" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="deskripsi">Deskripsi</label>
+                <textarea id="deskripsi" name="deskripsi"></textarea>
+                <div id="errorDeskripsi" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" name="kategori">
+                    <option value="">--Pilih Kategori--</option>
+                    <option value="Baju">Baju</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Alat Tulis">Alat Tulis</option>
+                </select>
+                <div id="errorKategori" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="sub_kategori">Sub Kategori</label>
+                <select id="sub_kategori" name="sub_kategori">
+                    <option value="">--Pilih Sub Kategori--</option>
+                </select>
+                <div id="errorSubKategori" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="harga_satuan">Harga Satuan</label>
+                <input type="text" id="harga_satuan" name="harga_satuan">
+                <div id="errorHargaSatuan" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Grosir</label>
+                <input type="radio" id="grosir_ya" name="grosir" value="ya"> Ya
+                <input type="radio" id="grosir_tidak" name="grosir" value="tidak" checked> Tidak
+            </div>
+
+            <div class="form-group" id="harga_grosir_div" style="display:none;">
+                <label for="harga_grosir">Harga Grosir</label>
+                <input type="text" id="harga_grosir" name="harga_grosir">
+                <div id="errorHargaGrosir" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Jasa Kirim</label>
+                <input type="checkbox" name="jasa_kirim" value="JNE"> JNE<br>
+                <input type="checkbox" name="jasa_kirim" value="TIKI"> TIKI<br>
+                <input type="checkbox" name="jasa_kirim" value="SiCepat"> SiCepat<br>
+                <input type="checkbox" name="jasa_kirim" value="Ninja Express"> Ninja Express<br>
+                <input type="checkbox" name="jasa_kirim" value="Wahana"> Wahana<br>
+                <div id="errorJasaKirim" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="captcha_input">Captcha</label>
+                <div class="captcha-wrapper">
+                    <div id="captcha_text" class="captcha-text"></div>
+                    <input type="text" id="captcha_input" name="captcha_input" style="width: 50%;">
+                </div>
+                <div id="errorCaptcha" class="error"></div>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
