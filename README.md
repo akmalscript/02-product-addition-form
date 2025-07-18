@@ -2,7 +2,7 @@
 
 ## Output
 
-Check out [The Live Page](https://akmalscript.github.io/practice-projects/02-product-addition-form/)
+Check out [The Live Page](https://akmalscript.github.io/02-product-addition-form/)
 
 ## Technologies
 
